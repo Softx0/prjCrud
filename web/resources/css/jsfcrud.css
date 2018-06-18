@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo|Bentham|Limelight|Passion+One');
+
+
+
+root { 
+    display: block;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    background-image: url("destruction.jpeg") ;
+    font-size: 20px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #66999;
+
+
+}
+
+a {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Passion One', cursive;
+    text-align : justify;
+
+}
+
+table {
+    empty-cells: show;
+}
+
+form.jsfcrud_list_form th, td th {
+    font-size: x-small;
+    color: #4e6a71;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-color: #b2d5d6;
+    border-bottom-color: #b2d5d6;
+    border-left-color: #90b4bd;
+    border-right-color: #90b4bd;
+    letter-spacing: 3px;
+    text-align: left;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #b2d5d6;
+}
+
+td {
+    vertical-align: top;
+    padding-bottom: 8px;
+    font-size: small;
+}
+
+form.jsfcrud_list_form td, td td {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-color: #b2d5d6;
+    border-bottom-color: #b2d5d6;
+    border-left-color: #b2d5d6;
+    border-right-color: #b2d5d6;
+    vertical-align: baseline;
+    padding-bottom: 0px;
+}
+
+tr.jsfcrud_odd_row {
+    background-color: #fefeff;
+    color: #4e6a71;
+}
+
+
+tr.jsfcrud_even_row {
+    background-color: #eff5fa;
+    color: #4e6a71;
+}
+
+#busyImage {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+
+#images{
+    background-attachment: fixed;
+    width: 50%; height: 50%;
+    align-content: center;
+}
+
+#title{
+    font-family: 'Limelight', cursive;
+    text-align: center;
+    color: #ffffff;
+    font-size: 90px;
+    padding-top: 40px;
+
+}
+
+#info{
+    width: 30px; height: 30px;
+    float: right;
+    padding-top: 10px;
+}
+
+.text{
+    color: #000000;
+    font-family: 'Bentham', serif;
+    font-size: 20px;
+}
+#title2{
+    font-family: 'Limelight', cursive;
+    text-align: center;
+    color: #000000;
+    font-size: 45px;
+}
+
+.text2{
+    font-family: 'Arimo', sans-serif;
+
+    color: #000000;
+    font-size: 15px;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+/* For mobile phones: */
+    [class*="col-"] {
+        width: 50%;
+    }
+    body {
+        background-image: url(destruction.jpeg);
+    }
+
+    
+}

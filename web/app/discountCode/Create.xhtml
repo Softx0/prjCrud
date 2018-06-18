@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreateDiscountCodeTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid class="form-group" columns="2">
+                    <h:outputLabel class="text" value="Codigo de Descuento:&nbsp;" for="discountCode" />
+                    <h:inputText class="form-control" id="discountCode" value="#{discountCodeController.selected.discountCode}" title="#{bundle.CreateDiscountCodeTitle_discountCode}" required="true" requiredMessage="#{bundle.CreateDiscountCodeRequiredMessage_discountCode}"/>
+                    <h:outputLabel class="text" value="Tipo: " for="rate" />
+                    <h:inputText class="form-control" id="rate" value="#{discountCodeController.selected.rate}" title="#{bundle.CreateDiscountCodeTitle_rate}" />
+                </h:panelGrid>
+                <br />
+                <h:panelGrid columns="3">
+                    <h:commandLink class="btn btn-success" action="#{discountCodeController.create}" value="#{bundle.CreateDiscountCodeSaveLink}" />
+
+                    <h:commandLink class="btn btn-warning" action="#{discountCodeController.prepareList}" value="#{bundle.CreateDiscountCodeShowAllLink}" immediate="true"/>
+
+                    <h:link class="btn btn-primary" outcome="/index" value="#{bundle.CreateDiscountCodeIndexLink}"/>
+                </h:panelGrid>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>
